@@ -1,0 +1,84 @@
+.bestsellig{
+    width: 100%;
+    border: 3px solid transparent;
+    padding-top: 5.4375rem;
+    text-align: center;
+}
+
+.bestsellig h1{
+    font-size: 3.75rem;
+    font-weight: 600;
+    color: #100207;
+    line-height: 71px;
+
+}
+.bestsellig p{
+    font-size: 1.5rem;
+    color: #100207;
+}
+
+.bestsellig button{
+  background-color: transparent;
+  border: 2px solid #365567;
+  width: 16.0625rem;
+  height: 3.125rem;
+  font-size: 1.5625rem;
+  color: #365567;
+  margin-top: 2.6875rem;
+  margin-bottom: 4.3125rem;
+  border-radius: .375rem;
+
+  &:hover{
+    background-color: #434011;
+    color: white;
+  }
+}
+
+.embla {
+    overflow: hidden;
+    margin-top: 53px;
+  
+  }
+  .embla__container {
+    display: flex;
+  
+  }
+  .embla__slide{
+    display: flex;
+    flex-direction: column;
+    margin-right: 40px;
+    
+  }
+
+  .imgdiv{
+    width: 378px;
+    height: 405px;
+   
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+  }
+  .cardimg{
+    width: 371px;
+    height: 405px;
+
+    &:hover{
+        transform:scale(1.03);
+    }
+  }
+  .cardtext{
+    width: 381px;
+  }
+  .cardtext h1, .cardtext p{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+  }
+  .pricediv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .star{
+    display: inline-block;
+    margin-top: -3px;
+  }

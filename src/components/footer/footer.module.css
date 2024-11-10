@@ -1,0 +1,88 @@
+.footer{
+    width: calc(100% + 240px);
+    height: 373px;
+    margin-left: -7.5rem;
+    background-color: rgb(248, 210, 159);
+    padding: 60px 125px 60px;
+    color: black;
+    display: flex;
+}
+
+.fashion{
+    margin-right: 157px;
+  }
+.fashion h1{
+    font-size: 3.0636rem;
+    margin-bottom: 3.125rem;
+
+}
+.fashion p{
+    font-size: 1.4494rem;
+    margin-bottom: 16px;
+  }
+  .iconsdiv{
+    display: flex;
+    gap: 1.4375rem;
+  }
+  .shopdiv{
+    margin-right: 134px;
+  }
+
+  .shopdiv h1, .companydiv h1, .submitdiv h1{
+    font-size: 27.2px;
+    font-weight: 600;
+    margin-bottom: 26px;
+  }
+  .shopdiv ul, .companydiv ul{
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+  }
+  .shopdiv ul li, .companydiv ul li{
+    font-size: 18px;
+  }
+  .companydiv{
+    margin-right: 107px;
+  }
+
+  .input{
+    width: 331px;
+    height: 49px;
+    padding: 13px 0px 13px 21px;
+    font-size: 18px;
+    background-color: transparent;
+    color: black;
+    border: 1px rgb(117, 115, 115) solid;
+    outline: none;
+  }
+
+  .inputdiv{
+    position: relative;
+  }
+  
+  .inputdiv button{
+    width: 107px;
+    height: 49px;
+    background-color: #B5ECE7;
+    color: black;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    position: absolute;
+    right: 0;
+  }
+
+
+
+
+@media(max-width:768px){
+    .footer{
+        flex-direction: column;
+        gap: 90px;
+        height: auto;
+    }
+    .inputdiv{
+        display: inline-block;
+    }
+}

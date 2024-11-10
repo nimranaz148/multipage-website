@@ -1,0 +1,95 @@
+.nav{
+    width: 1196px;
+    height: 47px;
+    background-color: transparent;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.25);
+    position: sticky;
+    top: 0;
+}
+.nav h1{
+    font-size: 38.74px;
+}
+.nav ul{
+    width: 461px;
+    height: 28px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav ul li{
+    font-size: 21.71px;
+    color: #100207;
+}
+.nav button{
+    width: 107px;
+    height: 42px;
+    border: 2px solid black;
+    background: transparent;
+    font-size: 21.71px;
+    border-radius: 6px;
+    color: black;
+
+    &:hover{
+        background-color: #d7cc82;
+    }
+}
+
+.menu{
+    display: none;
+    margin-right: 20px;
+}
+.linksdiv{
+    width: 829px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+@media (max-width:768px){
+    .linksdiv{
+        display: none;
+    }
+    .adjust{
+        background-color: white;
+        display: block;
+        position: absolute;
+        top: 47px;
+        left: 0;
+        width: 100%;
+        height: 350px;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 20px;
+        box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.25);
+        overflow: hidden;
+    }
+    .adjust ul{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        padding-top: 20px;
+        margin-bottom: 20px;
+
+    }
+    .adjust ul li{
+        font-size: 30px;
+    }
+    .adjust button{
+        width: 240px;
+        height: 50px;
+    }
+ 
+    .menu{
+        display: block;
+    }
+    .nav h1{
+        margin-left: 20px;
+    }
+}

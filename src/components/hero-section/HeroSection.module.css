@@ -1,0 +1,92 @@
+.hero{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    
+}
+
+.heroleft{
+    width: 50%;
+    height: 100%;
+    padding-top: 109px;
+    border: 3px solid transparent;
+}
+.heroleft h1{
+    font-size: 6.25rem;
+    color: #100207;
+    margin-bottom: 41px;
+   
+}
+.heroleft p{
+    font-size: 1.5rem;
+    color: #100207;
+    margin-bottom: 2rem;
+   
+}
+.heroleft button{
+    width: 14.4375rem;
+    height: 3.5625rem;
+    font-size: 1.5rem;
+    background-color: #100207;
+    color: white;
+
+    &:hover{
+        background-color: #f6d28b;
+    }
+}
+
+.heroright{
+    width: 50%;
+    height: 100%;
+    padding-top: 109px;
+    border: 3px solid transparent;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.herorightimg{
+    width: 400px;
+    height: 600px;
+    border-top-left-radius: 120px;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 120px;
+    border-bottom-left-radius: 40px;
+    background-color: #f6d196;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+@media(max-width:768px){
+    .hero{
+        flex-direction: column; 
+    }
+
+    .heroleft{
+        width: 70%;
+        padding-top: 4.375rem
+    }
+
+    .heroright{
+        width: 70%;
+        padding-top: 4.375rem;
+        display: flex;
+        justify-content: center;
+    }
+
+    
+.herorightimg{
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 140px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 140px;
+    border-bottom-left-radius: 50px;
+    overflow: hidden;
+
+}
+
+
+
+}
