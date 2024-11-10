@@ -2,16 +2,18 @@ import Bestselling from '@/components/best-selling/Bestselling'
 import Productdetails from '@/components/productdetails/Productdetails'
 import React from 'react'
 
-function dynamicproduct({params}: {params : {id:number}}) {
-
-    
+async function dynamicproduct({params}: {params : Promise<{id : string}>}) {
+  const {id} = await params
   return (
     <div>
-      <Productdetails cardid={params.id}/>
+      <Productdetails cardid ={id}/>
 
-      <Bestselling></Bestselling>
+      <Bestselling/>
     </div>
   )
 }
 
 export default dynamicproduct
+
+    
+

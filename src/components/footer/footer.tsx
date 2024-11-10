@@ -1,6 +1,6 @@
 import React from  'react'
 import styles from './footer.module.css'
-import {ibmPlexSerif, inter} from '@/font'
+import {ibmPlexSerif} from '@/font'
 import { FaFacebookSquare } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { RiInstagramFill } from "react-icons/ri";

@@ -6,8 +6,8 @@ import { cardData } from '@/constant/card'
 
 
 
-function Productdetails(props: {cardid:number}) {
-     let data = cardData.find((item) =>{return item.id == props.cardid})
+function Productdetails(props: {cardid:string}) {
+     const data = cardData.find((item) =>{return item.id ==  (props.cardid) as unknown as number})
 
   return (
     <div>

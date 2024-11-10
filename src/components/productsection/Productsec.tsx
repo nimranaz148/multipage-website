@@ -3,7 +3,6 @@ import Image from "next/image";
 import styles from "./productsec.module.css";
 import { IoStar } from "react-icons/io5";
 import { cardData } from "@/constant/card";
-import { div } from "framer-motion/client";
 import Link from "next/link";
 
 function Productsec() {
@@ -12,7 +11,7 @@ function Productsec() {
       <section className={styles.product}>
         {cardData.map((item, index) => {
           return (
-            <Link href={`/shop/${item.id}`}>
+            <Link href={`/shop/${item.id}`} key={index}>
             <div className={styles.card} key={index}>
               <div className={styles.topimagediv} style={{ backgroundColor:item.backgroundColor}}>
                 <Image
